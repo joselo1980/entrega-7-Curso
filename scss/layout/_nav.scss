@@ -1,0 +1,32 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// ===== MENU (NAVBAR DE BOOTSTRAP) =====
+.menu {
+    gap: $espacio-chico;
+
+    @include escritorio {
+        gap: $espacio-medio;
+    }
+}
+
+.barra .menu-link {
+    color: $color-blanco;
+    font-weight: $peso-negrita;
+    border-bottom: 2px solid transparent;
+    transition: color $transicion, border-color $transicion;
+
+    &:hover {
+        color: $color-acento;
+        border-bottom-color: $color-acento;
+    }
+
+    &:focus {
+        color: $color-acento;
+        outline: 2px solid $color-acento;
+    }
+
+    &:active {
+        color: $color-secundario;
+    }
+}
