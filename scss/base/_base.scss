@@ -1,0 +1,37 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// ===== RESET =====
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ===== GENERAL =====
+.pagina {
+    background-color: $color-secundario;
+    color: $color-texto;
+    font-family: $fuente-texto;
+}
+
+.contenido {
+    @include columna(30px);
+    padding: $espacio-medio;
+
+    @include escritorio {
+        padding: $espacio-grande;
+    }
+}
+
+.seccion {
+    @include columna(15px);
+}
+
+.lista {
+    padding-left: $espacio-medio;
+}
+
+.foto {
+    width: 100%;
+}

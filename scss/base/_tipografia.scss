@@ -1,0 +1,42 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// ===== TITULOS =====
+.titulo {
+    margin: 0;
+    color: $color-primario;
+    font-family: $fuente-titulos;
+    font-size: 34px;
+    font-weight: $peso-negrita;
+
+    @include escritorio {
+        font-size: 42px;
+    }
+}
+
+.titulo-seccion {
+    margin: 0;
+    color: $color-primario;
+    font-family: $fuente-titulos;
+    font-size: 26px;
+    font-weight: $peso-negrita;
+
+    @include escritorio {
+        font-size: 30px;
+    }
+}
+
+.subtitulo {
+    margin: 0;
+    color: $color-primario;
+    font-family: $fuente-texto;
+    font-size: 20px;
+    font-weight: $peso-negrita;
+}
+
+// ===== TEXTOS =====
+.texto {
+    margin: 0;
+    font-size: 16px;
+    font-weight: $peso-normal;
+}
