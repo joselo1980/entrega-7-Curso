@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+// Media query de escritorio (mobile-first)
+@mixin escritorio {
+    @media (min-width: $escritorio) {
+        @content;
+    }
+}
+
+// Contenedor flex en columna
+@mixin columna($espacio) {
+    display: flex;
+    flex-direction: column;
+    gap: $espacio;
+}
